@@ -1,67 +1,153 @@
-*{
-	font-size: 14px;
-	font-family: FiraCode;
+* {
+  font-size: 14px;
+  font-family: FiraCode;
 }
+
 window#waybar {
-	background: rgba(0,0,0,0);
-	color: #fdf6e3;
-	font-size: 14px;
+  background: rgba(0, 0, 0, 0);
+  color: #e5dccb; /* Cor principal do texto */
+  font-size: 14px;
 }
-#custom-right-arrow-dark,
-#custom-left-arrow-dark {
-    color: #1a1a1a;
+
+/* #workspaces button.focused { */
+/*   color: #84dcd4; /\* Strings *\/ */
+/* } */
+
+/* #workspaces button:hover { */
+/*   box-shadow: inherit; */
+/*   text-shadow: inherit; */
+/* } */
+
+/* #workspaces button:hover { */
+/*   background: #d19742; /\* Nome de funções *\/ */
+/*   border: #d19742; */
+/*   padding: 0 3px; */
+/* } */
+
+
+
+#battery {
+  background: #58c5cd; /* Constantes */
+  color: #e5dccb; /* Texto principal */
+}
+
+
+#custom-ra-temp,
+#custom-la-temp
+{
+    color: #66a1b8;; /* Texto principal para contraste */
     font-size: 20px;
 }
-#custom-right-arrow-light,
-#custom-left-arrow-light {
-	color: #292b2e;
-	background: #1a1a1a;
-}
 #custom-gpu,
-#temperature, 
-#network,
-#workspaces,
-#clock.1,
-#clock.2,
-#clock.3,
-#pulseaudio,
-#memory,
-#cpu,
-#battery,
-#disk,
-#tray {
-	background: #1a1a1a;
+#temperature {
+  background: #66a1b8; /* Variáveis - cor compartilhada */
+  color: #000000; /* Texto principal para contraste */
 }
 
-#workspaces button {
-	padding: 0 2px;
-	color: #fdf6e3;
+#custom-ra-net,
+#custom-la-net
+{
+ color: #e35b22; /* Palavras-chave */
+    font-size: 20px;
 }
-#workspaces button.focused {
-	color: #268bd2;
-}
-#workspaces button:hover {
-	box-shadow: inherit;
-	text-shadow: inherit;
-}
-#workspaces button:hover {
-	background: #1a1a1a;
-	border: #1a1a1a;
-	padding: 0 3px;
+#network {
+  background: #e35b22; /* Palavras-chave */
+  color: #000000; /* Texto principal para contraste */
 }
 
-#pulseaudio {
-	color: #268bd2;
-}
-#memory {
-	color: #2aa198;
-}
-#cpu {
-	color: #6c71c4;
-}
-#battery {
-	color: #859900;
+#custom-ra-disk,
+#custom-la-disk
+{
+ color: #84dcd4; /* Palavras-chave */
+    font-size: 20px;
 }
 #disk {
-	color: #b58900;
+  background: #84dcd4; /* Strings */
+  color: #000000; /* Texto principal */
 }
+
+#custom-ra-cpu,
+#custom-la-cpu
+{
+    color: #66a1b8; /* Palavras-chave */
+    font-size: 20px;
+}
+#cpu {
+  background: #66a1b8; /* Variáveis - cor compartilhada */
+  color: #000000; /* Texto principal */
+}
+
+#custom-ra-ram,
+#custom-la-ram
+{
+    color: #66a1b8; /* Palavras-chave */
+    font-size: 20px;
+}
+#memory {
+  background: #66a1b8; /* Variáveis */
+  color: #000000; /* Texto principal para contraste */
+}
+
+#custom-ra-pulse,
+#custom-la-pulse
+{
+    color: #cc8f62; /* Palavras-chave */
+    font-size: 20px;
+}
+#pulseaudio {
+  background: #cc8f62; /* Comentários */
+  color: #000000; /* Texto principal para contraste */
+}
+
+#custom-ra-clock1,
+#custom-la-clock1
+{
+    color: #84dcd4; /* Palavras-chave */
+    font-size: 20px;
+}
+#clock.1 {
+  background: #84dcd4; /* Strings */
+  color: #000000; /* Fundo principal */
+}
+
+#custom-ra-clock2,
+#custom-la-clock2
+{
+    color: #66a1b8; /* Palavras-chave */
+    font-size: 20px;
+}
+#clock.2 {
+  background: #66a1b8; /* Variáveis */
+  color: #000000; /* Texto principal para contraste */
+}
+
+#custom-ra-clock3,
+#custom-la-clock3
+{
+    color: #cc8f62; /* Palavras-chave */
+    font-size: 20px;
+}
+#clock.3 {
+  background: #cc8f62; /* Comentários */
+  color: #000000; /* Texto principal para contraste */
+}
+
+
+#custom-ra-work-tray,
+#custom-la-work {
+  color: #d19742; /* Nome de funções para contraste */
+  font-size: 20px;
+}
+#tray,
+#workspaces {
+  background: #d19742; /* Nome de funções */
+  color: #000000; /* Texto principal para legibilidade */
+}
+#workspaces button {
+  padding: 0 2px;
+  color: #000000; /* Texto principal */
+}
+/* #tray { */
+/*   background: #d19742; /\* Nome de funções *\/ */
+/*   color: #000000; /\* Texto principal *\/ */
+/* } */
