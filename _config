@@ -1,0 +1,21 @@
+{
+  "layer": "top",
+  "position": "bottom",
+  "modules-left": ["custom/temperature_cpu", "custom/temperature_gpu", "custom/network"],
+
+  "custom/temperature_cpu": {
+    "format": "{output}",
+    "exec": "bash -c \"sensors | grep 'Core 0' | awk '{print \\$3}' | tr -d '+'\"",
+    "interval": 5
+  },
+  "custom/temperature_gpu": {
+    "format": "{output}",
+    "exec": "bash -c \"nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader\"",
+    "interval": 5
+  },
+  "custom/network": {
+    "format": " {output}%",
+    "exec": "bash -c \"nmcli -t -f IN-USE,SSID,SIGNAL dev wifi | grep '*' | cut -d: -f3\"",
+    "interval": 10
+  }
+}
