@@ -1,0 +1,242 @@
+// -*- mode: json -*-
+
+{
+"layer": "top",
+"position": "top",
+
+"modules-left": [
+"custom/la-work",
+"hyprland/workspaces",
+"tray",
+"custom/ra-work-tray",
+],
+"modules-center": [
+"custom/la-clock1",
+"clock#1",
+"custom/ra-clock1",
+"custom/la-clock2",
+"clock#2",
+"custom/ra-clock2",
+"custom/la-clock3",
+"clock#3",
+"custom/ra-clock3"
+],
+"modules-right": [
+"custom/la-pulse",
+"pulseaudio",
+"custom/ra-pulse",
+"custom/la-ram",
+"memory",
+"custom/ra-ram",
+"custom/la-cpu",
+"cpu",
+"custom/ra-cpu",
+"custom/la-disk",
+"disk",
+"custom/ra-disk",
+"custom/la-net",
+"network",
+"custom/ra-net",
+"custom/la-temp",
+"temperature",
+"custom/gpu",
+"custom/ra-temp",
+],
+
+"custom/right-arrow-dark": {
+"format": "",
+"tooltip": false
+},
+"custom/left-arrow-dark": {
+"format": "",
+"tooltip": false
+},
+"custom/left-arrow-light": {
+"format": "",
+"tooltip": false
+},
+"custom/right-arrow-dark": {
+"format": "",
+"tooltip": false
+},
+"custom/right-arrow-light": {
+"format": "",
+"tooltip": false
+},
+"sway/workspaces": {
+"disable-scroll": true,
+"format": "{name}"
+},
+
+"custom/ra-clock1": {
+"format": "",
+"tooltip": false
+},
+"custom/la-clock1": {
+"format": "",
+"tooltip": false
+},
+"clock#1": {
+"format": "{:%a}",
+"tooltip": false
+},
+"custom/ra-clock2": {
+"format": "",
+"tooltip": false
+},
+"custom/la-clock2": {
+"format": "",
+"tooltip": false
+},
+"clock#2": {
+"format": "{:%H:%M}",
+"tooltip": false
+},
+
+"custom/ra-clock3": {
+"format": "",
+"tooltip": false
+},
+"custom/la-clock3": {
+"format": "",
+"tooltip": false
+},
+"clock#3": {
+"format": "{:%m-%d}",
+"tooltip": false
+},
+
+"custom/ra-pulse": {
+"format": "",
+"tooltip": false
+},
+"custom/la-pulse": {
+"format": "",
+"tooltip": false
+},
+"pulseaudio": {
+"format": "{icon} {volume:2}%",
+"format-bluetooth": "{icon}  {volume}%",
+"format-muted": "MUTE",
+"format-icons": {
+"headphones": "",
+"default": [
+"",
+""
+]
+},
+"scroll-step": 5,
+"on-click": "pamixer -t",
+"on-click-right": "pavucontrol"
+},
+"battery": {
+"states": {
+"good": 95,
+"warning": 30,
+"critical": 15
+},
+"format": "{icon} {capacity}%",
+"format-icons": [
+"",
+"",
+"",
+"",
+""
+]
+},
+
+"custom/ra-temp": {
+"format": "",
+"tooltip": false
+},
+"custom/la-temp": {
+"format": "",
+"tooltip": false
+},
+"temperature": {
+"hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+"critical-threshold": 80,
+"format-critical": "{icon}{temperatureC}°C",
+"format": "C{icon} {temperatureC}°C",
+"format-icons": [""]
+},
+"custom/gpu": {
+    "exec": "~/.config/waybar/shellScript/gpu_temp.sh",
+    "interval": 5,
+    "format": " G{icon} {}",
+    "format-icons": [""],
+    "tooltip": "Temperatura da GPU"
+},
+
+"custom/ra-net": {
+"format": "",
+"tooltip": false
+},
+"custom/la-net": {
+"format": "",
+"tooltip": false
+},
+"network": {
+"interface": "wlp2s0",
+"format-wifi": "{icon}{signalStrength}%",
+"tooltip-format-wifi": "{essid}",
+"format-linked": "󰤩 (No IP)",
+"format-disconnected": "󰤨  on",
+"format-disabled": "󰤭  off",
+"format-icons": [ "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
+},
+"tray": {
+"icon-size": 20
+},
+
+"custom/ra-disk": {
+"format": "",
+"tooltip": false
+},
+"custom/la-disk": {
+"format": "",
+"tooltip": false
+},
+"disk": {
+"interval": 5,
+"format": "💾 {percentage_used:2}%",
+"path": "/"
+},
+
+"custom/ra-cpu": {
+"format": "",
+"tooltip": false
+},
+"custom/la-cpu": {
+"format": "",
+"tooltip": false
+},
+"cpu": {
+"interval": 5,
+"format": "🧠{usage:2}%"
+},
+
+"custom/ra-ram": {
+"format": "",
+"tooltip": false
+},
+"custom/la-ram": {
+"format": "",
+"tooltip": false
+},
+"memory": {
+"interval": 5,
+"format": "🖪 {}%"
+},
+
+
+"custom/ra-work-tray": {
+"format": "",
+"tooltip": false
+},
+"custom/la-work": {
+"format": "",
+"tooltip": false
+},
+
+}

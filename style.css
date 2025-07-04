@@ -1,0 +1,142 @@
+* {
+  font-size: 14px;
+  font-family: FiraCode;
+}
+
+window#waybar {
+  background: rgba(0, 0, 0, 0);
+  color: #d8dee9;
+  font-size: 14px;
+}
+
+/* WORKSPACES */
+#workspaces {
+  background: #d08770;
+  color: #000000;
+}
+#workspaces button {
+  padding: 0 2px;
+  color: #000000;
+}
+#workspaces button.focused {
+  background: #81a1c1;
+  color: #000000;
+}
+
+/* BATTERY */
+#battery {
+  background: #88c0d0;
+  color: #22303c;
+}
+
+/* TEMPERATURA */
+#custom-ra-temp,
+#custom-la-temp {
+  color: #81a1c1;
+  font-size: 20px;
+}
+#temperature {
+  background: #81a1c1;
+  color: #22303c;
+}
+#custom-gpu {
+  background: #81a1c1;
+  color: #22303c;
+}
+
+/* REDE */
+#custom-ra-net,
+#custom-la-net {
+  color: #bf616a;
+  font-size: 20px;
+}
+#network {
+  background: #bf616a;
+  color: #22303c;
+}
+
+/* DISCO */
+#custom-ra-disk,
+#custom-la-disk {
+  color: #a3be8c;
+  font-size: 20px;
+}
+#disk {
+  background: #a3be8c;
+  color: #22303c;
+}
+
+/* CPU */
+#custom-ra-cpu,
+#custom-la-cpu {
+  color: #81a1c1;
+  font-size: 20px;
+}
+#cpu {
+  background: #81a1c1;
+  color: #22303c;
+}
+
+/* MEMÓRIA */
+#custom-ra-ram,
+#custom-la-ram {
+  color: #81a1c1;
+  font-size: 20px;
+}
+#memory {
+  background: #81a1c1;
+  color: #22303c;
+}
+
+/* ÁUDIO */
+#custom-ra-pulse,
+#custom-la-pulse {
+  color: #ebcb8b;
+  font-size: 20px;
+}
+#pulseaudio {
+  background: #ebcb8b;
+  color: #22303c;
+}
+
+/* RELÓGIOS */
+#custom-ra-clock1,
+#custom-la-clock1 {
+  color: #a3be8c;
+  font-size: 20px;
+}
+#clock.1 {
+  background: #a3be8c;
+  color: #22303c;
+}
+
+#custom-ra-clock2,
+#custom-la-clock2 {
+  color: #81a1c1;
+  font-size: 20px;
+}
+#clock.2 {
+  background: #81a1c1;
+  color: #22303c;
+}
+
+#custom-ra-clock3,
+#custom-la-clock3 {
+  color: #ebcb8b;
+  font-size: 20px;
+}
+#clock.3 {
+  background: #ebcb8b;
+  color: #22303c;
+}
+
+/* TRAY */
+#custom-ra-work-tray,
+#custom-la-work {
+  color: #d08770;
+  font-size: 20px;
+}
+#tray {
+  background: #d08770;
+  color: #22303c;
+}
